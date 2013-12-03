@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-//ÀúÀåµÈ ÆÄÀÏ¿¡¼­ ÁÖ¹®³»¿ªÀ» ÀĞÀ»¶§ »ç¿ëµÇ´Â Å¬·¡½º
+// ì €ì¥ëœ íŒŒì¼ì„ ì½ì–´ì˜¤ëŠ” í´ë˜ìŠ¤
 public class ReadFile{
 	FileReader fr;
 	String orderList="";
@@ -19,7 +19,7 @@ public class ReadFile{
 			String s;
 			
 			while ((s = in.readLine()) != null) {
-				System.out.println("ÁÖ¹®¸ñ·Ï ÀÎµ¦½º++"+s);
+				System.out.println("ì£¼ë¬¸ëª©ë¡++"+s);
 				sendMsg += s;
 				sendMsg += "[EOOL]";
 				//_ol.indexTokenizer(s);
@@ -28,7 +28,7 @@ public class ReadFile{
 			csh.sendOrderList(sendMsg);
 			in.close();
 		}catch (IOException e) {
-	        System.err.println(e); // ¿¡·¯°¡ ÀÖ´Ù¸é ¸Ş½ÃÁö Ãâ·Â
+	        System.err.println(e); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´Ù¸ï¿½ ï¿½Ş½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 	    }
 	}
 	public int getIndexNum(String _filePath){
@@ -40,7 +40,7 @@ public class ReadFile{
 			}
 			in.close();
 		}catch (IOException e) {
-	        System.err.println(e); // ¿¡·¯°¡ ÀÖ´Ù¸é ¸Ş½ÃÁö Ãâ·Â
+	        System.err.println(e); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´Ù¸ï¿½ ï¿½Ş½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 	    }
 		return indexNum;
 	}

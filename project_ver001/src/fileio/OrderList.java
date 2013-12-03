@@ -15,7 +15,6 @@ public class OrderList{
 		while(stk.hasMoreTokens()){
 			String lineEndValue;
 			lineEndValue = stk.nextToken();
-			System.out.println("test : "+lineEndValue);
 			if(lineEndValue.equals("ND")){
 				break;
 			}
